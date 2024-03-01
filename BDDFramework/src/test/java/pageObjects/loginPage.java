@@ -31,7 +31,7 @@ public void clickLogin()
 
 public void isLogoDisplayed()
 {
-	driver.findElement(By.id("lbl_logo")).isDisplayed();
+	driver.findElement(lbl_logo).isDisplayed();
 }
 
 public void userLogin (String username, String password)
@@ -40,5 +40,6 @@ public void userLogin (String username, String password)
 	driver.findElement(By.id("password")).sendKeys(password);
 	driver.findElement(By.id("login-button")).click();
 }
+
 
 }
